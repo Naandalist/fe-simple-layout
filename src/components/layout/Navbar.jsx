@@ -1,11 +1,20 @@
 import React from "react";
+import swal from "sweetalert";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ icon, title }) => {
   return (
     <nav className='navbar bg-primary'>
-      <h1>
+      <h1
+        onClick={() =>
+          swal({
+            icon: "info",
+            title: "You have clicked the icon",
+            timer: 2000
+          })
+        }
+      >
         <i className={icon} /> {title}
       </h1>
       <ul>

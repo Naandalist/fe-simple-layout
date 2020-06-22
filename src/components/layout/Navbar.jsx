@@ -11,7 +11,7 @@ const Navbar = ({ icon, title }) => {
           swal({
             icon: "info",
             title: "You have clicked the icon",
-            timer: 2000
+            timer: 2000,
           })
         }
       >
@@ -36,13 +36,13 @@ const Navbar = ({ icon, title }) => {
 };
 
 Navbar.defaultProps = {
-  title: "Front End Logo",
-  icon: "fab fa-github"
+  title: "Text Edited v2",
+  icon: "fab fa-github",
 };
 
 Navbar.propTypes = {
   title: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired
+  icon: PropTypes.string.isRequired,
 };
 
 export default Navbar;
